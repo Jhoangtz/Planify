@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi itinerario | Planify</title>
+<meta name="description" content="Crea tu itinerario y plan de viaje.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+<div class="container bar">
+<a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="36" height="36"><span>Planify</span></a>
+<input type="checkbox" id="menu" class="menu-toggle" aria-label="Abrir menú">
+<label for="menu" class="menu-btn" aria-hidden="true">☰</label>
+<nav aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li><a href="explorar.html">Explorar</a></li><li><a href="favoritos.html">Favoritos</a></li><li><a href="itinerario.html" aria-current="page">Mi itinerario</a></li><li><a href="acerca.html">Acerca de</a></li></ul></nav>
+</div>
+</header>
+<main id="contenido">
+<section class="page-head"><div class="container"><h1>Mi viaje a España</h1><p>Organiza tus actividades por día.</p></div></section><section class="section"><div class="container"><div class="days"><article class="day"><h3>Día 1</h3><ul><li>Llegada a Madrid</li><li>Visitar el centro histórico</li></ul><button class="btn btn-ghost" type="button">+ Agregar actividad</button></article><article class="day"><h3>Día 2</h3><ul><li>Museo del Prado</li><li>Parque del Retiro</li></ul><button class="btn btn-ghost" type="button">+ Agregar actividad</button></article><article class="day"><h3>Día 3</h3><ul><li>Excursión a Toledo</li><li>Cena de despedida</li></ul><button class="btn btn-ghost" type="button">+ Agregar actividad</button></article></div></div></section>
+<section class="section alt"><div class="container"><h2>Crear un plan de viaje</h2>
+<form class="form" action="#">
+<div class="field"><label for="nombre">Nombre del viaje</label><input id="nombre" name="nombre" type="text" required minlength="3" placeholder="Ej: Vacaciones en España"><p class="hint">Mínimo 3 caracteres.</p></div>
+<div class="field"><label for="destino">Destino</label><input id="destino" name="destino" type="text" required placeholder="Ej: Madrid, España"></div>
+<div class="field"><label for="inicio">Fecha de inicio</label><input id="inicio" name="inicio" type="date" required></div>
+<div class="field"><label for="fin">Fecha de finalización</label><input id="fin" name="fin" type="date" required><p class="hint">Debe ser posterior a la fecha de inicio.</p></div>
+<div class="field"><label for="viajeros">Número de viajeros</label><input id="viajeros" name="viajeros" type="number" min="1" max="20" value="1" required></div>
+<div class="field"><label for="presupuesto">Presupuesto estimado (USD)</label><input id="presupuesto" name="presupuesto" type="number" min="0" step="50" placeholder="1500"></div>
+<div class="field full"><label for="comentarios">Comentarios</label><textarea id="comentarios" name="comentarios" rows="4" maxlength="300" placeholder="Notas para tu viaje…"></textarea></div>
+<div class="field full error-demo"><label for="demo">Ejemplo de campo con error</label><input id="demo" type="text" aria-invalid="true" aria-describedby="demo-e"><p id="demo-e" class="error">Este campo es obligatorio.</p></div>
+<div class="full"><button class="btn btn-primary" type="submit">Guardar plan</button></div></form></div></section>
+</main>
+<footer class="site-footer">
+<div class="container foot">
+<p><strong>Planify</strong> · Planifica. Explora. Viaja.</p>
+<ul><li><a href="explorar.html">Explorar</a></li><li><a href="favoritos.html">Favoritos</a></li><li><a href="itinerario.html">Itinerario</a></li><li><a href="acerca.html">Acerca de</a></li></ul>
+<p class="small">© 2026 Planify. Proyecto académico.</p>
+</div>
+</footer>
+</body>
+</html>

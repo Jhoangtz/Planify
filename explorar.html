@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explorar destinos | Planify</title>
+<meta name="description" content="Explora países y destinos del mundo.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+<div class="container bar">
+<a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="36" height="36"><span>Planify</span></a>
+<input type="checkbox" id="menu" class="menu-toggle" aria-label="Abrir menú">
+<label for="menu" class="menu-btn" aria-hidden="true">☰</label>
+<nav aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li><a href="explorar.html" aria-current="page">Explorar</a></li><li><a href="favoritos.html">Favoritos</a></li><li><a href="itinerario.html">Mi itinerario</a></li><li><a href="acerca.html">Acerca de</a></li></ul></nav>
+</div>
+</header>
+<main id="contenido">
+<section class="page-head"><div class="container"><h1>Explorar destinos</h1><p>Busca un país y filtra por región.</p></div></section><section class="section"><div class="container">
+<form class="search search-light" action="explorar.html" role="search"><label class="sr" for="q">Buscar país</label>
+<input id="q" name="q" type="search" placeholder="Buscar país o ciudad…"><button class="btn btn-primary" type="submit">Buscar</button></form>
+<ul class="chips" aria-label="Filtrar por región"><li><a class="chip" href="explorar.html" aria-current=true>Todas</a></li><li><a class="chip" href="explorar.html">Europa</a></li><li><a class="chip" href="explorar.html">América</a></li><li><a class="chip" href="explorar.html">Asia</a></li><li><a class="chip" href="explorar.html">África</a></li><li><a class="chip" href="explorar.html">Oceanía</a></li></ul>
+<div class="grid"><article class="card"><img src="https://flagcdn.com/w320/es.png" alt="Bandera de España" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>España</h3><p class="meta">Capital: Madrid<br>Región: Europa<br>Población: 47,4 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar España a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/jp.png" alt="Bandera de Japón" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Japón</h3><p class="meta">Capital: Tokio<br>Región: Asia<br>Población: 123,3 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Japón a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/it.png" alt="Bandera de Italia" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Italia</h3><p class="meta">Capital: Roma<br>Región: Europa<br>Población: 58,9 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Italia a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/co.png" alt="Bandera de Colombia" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Colombia</h3><p class="meta">Capital: Bogotá<br>Región: América<br>Población: 52,1 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Colombia a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/ca.png" alt="Bandera de Canadá" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Canadá</h3><p class="meta">Capital: Ottawa<br>Región: América<br>Población: 40,1 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Canadá a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/au.png" alt="Bandera de Australia" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Australia</h3><p class="meta">Capital: Canberra<br>Región: Oceanía<br>Población: 26,6 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Australia a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/ma.png" alt="Bandera de Marruecos" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Marruecos</h3><p class="meta">Capital: Rabat<br>Región: África<br>Población: 37,8 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Marruecos a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/th.png" alt="Bandera de Tailandia" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Tailandia</h3><p class="meta">Capital: Bangkok<br>Región: Asia<br>Población: 71,8 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Tailandia a favoritos">♥ Favorito</button></div></div></article></div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container foot">
+<p><strong>Planify</strong> · Planifica. Explora. Viaja.</p>
+<ul><li><a href="explorar.html">Explorar</a></li><li><a href="favoritos.html">Favoritos</a></li><li><a href="itinerario.html">Itinerario</a></li><li><a href="acerca.html">Acerca de</a></li></ul>
+<p class="small">© 2026 Planify. Proyecto académico.</p>
+</div>
+</footer>
+</body>
+</html>

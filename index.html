@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Planify</title>
+<meta name="description" content="Planify centraliza destinos, clima e itinerario para planificar tu viaje.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+<div class="container bar">
+<a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="36" height="36"><span>Planify</span></a>
+<input type="checkbox" id="menu" class="menu-toggle" aria-label="Abrir menú">
+<label for="menu" class="menu-btn" aria-hidden="true">☰</label>
+<nav aria-label="Principal"><ul><li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="explorar.html">Explorar</a></li><li><a href="favoritos.html">Favoritos</a></li><li><a href="itinerario.html">Mi itinerario</a></li><li><a href="acerca.html">Acerca de</a></li></ul></nav>
+</div>
+</header>
+<main id="contenido">
+<section class="hero"><div class="container">
+<h1>Planifica tu próximo viaje</h1>
+<p>Explora destinos, consulta el clima y arma tu itinerario en un solo lugar.</p>
+<form class="search" action="explorar.html" role="search"><label class="sr" for="q">Buscar un destino</label>
+<input id="q" name="q" type="search" placeholder="Buscar un país o ciudad…" required><button class="btn btn-accent" type="submit">Buscar</button></form>
+</div></section>
+<section class="section"><div class="container"><h2>Destinos destacados</h2><div class="grid"><article class="card"><img src="https://flagcdn.com/w320/es.png" alt="Bandera de España" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>España</h3><p class="meta">Capital: Madrid<br>Región: Europa<br>Población: 47,4 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar España a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/jp.png" alt="Bandera de Japón" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Japón</h3><p class="meta">Capital: Tokio<br>Región: Asia<br>Población: 123,3 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Japón a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/it.png" alt="Bandera de Italia" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Italia</h3><p class="meta">Capital: Roma<br>Región: Europa<br>Población: 58,9 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Italia a favoritos">♥ Favorito</button></div></div></article><article class="card"><img src="https://flagcdn.com/w320/co.png" alt="Bandera de Colombia" loading="lazy" width="320" height="213">
+<div class="card-body"><h3>Colombia</h3><p class="meta">Capital: Bogotá<br>Región: América<br>Población: 52,1 M</p>
+<div class="card-actions"><a class="btn btn-primary" href="detalle.html">Ver detalles</a><button class="btn btn-ghost" type="button" aria-label="Agregar Colombia a favoritos">♥ Favorito</button></div></div></article></div></div></section>
+<section class="section alt"><div class="container"><h2>Cómo funciona</h2><ol class="steps">
+<li><h3>Explora</h3><p>Busca un país y filtra por región para ver su información básica.</p></li>
+<li><h3>Consulta el clima</h3><p>Revisa la temperatura actual y el pronóstico de los próximos días.</p></li>
+<li><h3>Organiza tu viaje</h3><p>Guarda favoritos y arma tu itinerario día por día.</p></li></ol></div></section>
+<section class="section"><div class="container cta"><h2>¿Listo para empezar?</h2><a class="btn btn-primary" href="itinerario.html">Crear mi itinerario</a></div></section>
+</main>
+<footer class="site-footer">
+<div class="container foot">
+<p><strong>Planify</strong> · Planifica. Explora. Viaja.</p>
+<ul><li><a href="explorar.html">Explorar</a></li><li><a href="favoritos.html">Favoritos</a></li><li><a href="itinerario.html">Itinerario</a></li><li><a href="acerca.html">Acerca de</a></li></ul>
+<p class="small">© 2026 Planify. Proyecto académico.</p>
+</div>
+</footer>
+</body>
+</html>
